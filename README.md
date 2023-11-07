@@ -5,7 +5,7 @@ The pipeline will grab Terraform code from Github and apply it on AWS.
 
 The Project includes the code that defines the pipeline itself.
 ![Pipeline Diagram
-](<Screenshot 2023-08-28 at 3.55.49 PM.png>)
+](<C:\Users\marcs\OneDrive\Pictures\Screenshots\CICD-pipeline-diagram.png>)
 
 1. Github repo with main branch, will send notifications to the pipeline whenver changes happen to the branch
 2. Pipeline triggers
@@ -41,7 +41,7 @@ Verify terraform.tfstate files is pushed to TF state S3 bucket
 
 7. Begin working on the creating the pipeline, Include resource documentation from Terraform
 
-- create S3 bucket to store Pipeline Output Artifacts in (s3.tf). Artifacts are the files that are worked on by actions in the pipeline. 
+- create S3 bucket to store Pipeline Artifacts in (s3.tf). Artifacts are the files that are worked on by actions in the pipeline. 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
 - we need to create the pipeline itself
