@@ -5,7 +5,7 @@ The pipeline will grab Terraform code from Github and apply it on AWS.
 
 The Project includes the code that defines the pipeline itself.
 ![Pipeline Diagram
-](<C:\Users\marcs\OneDrive\Pictures\Screenshots\CICD-pipeline-diagram.png>)
+](<![Alt text](image.png)>)
 
 1. Github repo with main branch, will send notifications to the pipeline whenver changes happen to the branch
 2. Pipeline triggers
@@ -25,10 +25,10 @@ Step-by-step
 Grab ARN of secret
 
 
-4. create codestar connection to link codepipeline and github
+4. Create codestar connection to link codepipeline and github
 
 
-5. create a dev environment (clone github locally)
+5. Create a dev environment (clone github locally)
 using git clone 
 
 6. Begin working on tf files
@@ -36,7 +36,7 @@ using git clone
 -state.tf
 -variables.tf
 
-AFter configuration run terraform init and terraform plan
+After configuration run terraform init and terraform plan
 Verify terraform.tfstate files is pushed to TF state S3 bucket
 
 7. Begin working on the creating the pipeline, Include resource documentation from Terraform
@@ -44,8 +44,8 @@ Verify terraform.tfstate files is pushed to TF state S3 bucket
 - create S3 bucket to store Pipeline Artifacts in (s3.tf). Artifacts are the files that are worked on by actions in the pipeline. 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
-- we need to create the pipeline itself
-- create a role that the pipeline can use to execute 
+- Create the pipeline itself (pipeline.tf)
+- Create a role that the pipeline can use to execute (iam.tf)
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role
 
 8. Plan Phase is a Codebuild project and it will launch a Terraform docker image to run Terraform plan, output will be visible then we can decide it we want to approve
