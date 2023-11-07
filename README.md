@@ -4,7 +4,7 @@ In this project we will build a self-deploying AWS CICD infrastructure pipeline 
 The pipeline will grab Terraform code from Github and apply it on AWS. 
 
 The Project includes the code that defines the pipeline itself.
-![](image-1.png)
+![Alt text](image.png)
 
 1. Github repo with main branch, will send notifications to the pipeline whenver changes happen to the branch
 2. Pipeline triggers
