@@ -1,4 +1,4 @@
-# AWS CICD Pipepline #
+# AWS CICD Pipeline #
 
 In this project we will build a self-deploying AWS CICD infrastructure pipeline through Terraform.
 The pipeline will grab Terraform code from Github and apply it on AWS. 
