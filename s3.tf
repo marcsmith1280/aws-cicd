@@ -1,3 +1,4 @@
+#
 resource "aws_s3_bucket" "codepipeline_artifacts" {
   bucket = "cicd-pipeline-artifacts-6sports"
 } 
