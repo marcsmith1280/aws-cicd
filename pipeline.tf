@@ -27,7 +27,7 @@ resource "aws_codebuild_project" "tf-plan" {
 
 #Apply Phase, creation of CodeBuild Apply project used to run terraform apply with auto approval
 resource "aws_codebuild_project" "tf-apply" {
-  name          = "tf-cicd-apply"
+  name          = "cicd-apply"
   description   = "Apply stage for terraform"
   service_role  = aws_iam_role.codebuild-role.arn
 
