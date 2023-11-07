@@ -2,4 +2,3 @@
 .terraform/
 
 terraform.tfvars
-main.tf
