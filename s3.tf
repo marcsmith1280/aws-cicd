@@ -1,4 +1,4 @@
-#
+# S3 bucket that is used to store artifacts produced by CodeBuild. 
 resource "aws_s3_bucket" "codepipeline_artifacts" {
   bucket = "cicd-pipeline-artifacts-6sports"
 } 

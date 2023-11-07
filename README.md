@@ -41,7 +41,7 @@ Verify terraform.tfstate files is pushed to TF state S3 bucket
 
 7. Begin working on the creating the pipeline, Include resource documentation from Terraform
 
-- create S3 bucket to store Pipeline Artifacts in (s3.tf)
+- create S3 bucket to store Pipeline Output Artifacts in (s3.tf). Artifacts are the files that are worked on by actions in the pipeline. 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
 - we need to create the pipeline itself
